@@ -226,3 +226,42 @@ img{
   background: rgba(0,0,0, .6);
   transition: all ease .3s;
 }
+
+.content_last{
+  margin-top: -1.2em
+}
+
+.content__title{
+  background: #63c6ae;
+  color: white;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 0em;
+}
+
+.content-last{
+  margin-top: -2.8em;
+}
+
+.content-last__title{
+  background: #63c6ae;
+  color: white;
+  padding: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0em;
+}
+
+.content-last__img{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 0;
+  transition: all ease-in-out .5;
+}
+
+.content-last__img img{
+  display: block;
+  width: 100%;
+}
