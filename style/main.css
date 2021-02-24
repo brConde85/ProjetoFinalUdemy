@@ -53,12 +53,13 @@ img {
   background-color: #63c6ae;
   font-size: 24px;
   margin: 0;
-  padding: 20px;
+  padding: 20px 2em 20px;
   display: block;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  float: left
+  float: left;
+  text-align: right;
 }
 
 .header__nav {
@@ -122,7 +123,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .hero__title abbr {
@@ -365,4 +366,64 @@ img {
   color:#454e51;
   font-weight: 600;
   display: block;
+}
+
+
+/*------------media---------------*/
+
+@media(min-width: 1024px){
+  .header{
+    position: fixed;
+
+  }
+
+  .logo-text{
+    width: 25%;
+    box-sizing: border-box;
+  }
+
+  .header__btnMenu{
+    display: none;
+  }
+
+  .header__nav{
+    float: left;
+    width: 75%;
+    clear: none;
+    width: 750px;
+  }
+
+  .header__nav ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header__nav li{
+    border-bottom: none;
+    background-color: white;
+    flex-grow: 1;
+  }
+
+  .header__nav a{
+    background-color: white;
+    color: rgba(0, 0, 0, .6);
+    font-size: 14px;
+    padding: 1em;
+    font-weight: 700;
+    margin-top: .6em
+  }
+
+  .header__nav a:hover{
+    background-color: white;
+  }
+
+  .people-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 14px;
+  }
+
+  .container {
+    max-width: 980px;
+  }
 }
