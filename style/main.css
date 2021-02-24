@@ -320,13 +320,13 @@ img {
   display: inline-block;
 }
 
-.quote-container{
+.quote-container {
   background-color: #63c6ae;
   padding: 50px 0;
   border-bottom: 10px solid #59b9a1;
 }
 
-.quote-slideshow h2{
+.quote-slideshow h2 {
   color: white;
   font-size: 28px;
   font-style: italic;
@@ -335,35 +335,36 @@ img {
   text-align: justify;
 }
 
-.quote-slideshow figcaption{
+.quote-slideshow figcaption {
   color: white;
   font-size: 20px;
   text-align: center;
 }
 
-.no-js .quote-slideshow figure + figure{
+.no-js .quote-slideshow figure + figure {
   margin-top: 5em;
 }
 
-.footer{
+.footer {
   background-color: #242a2c;
   padding: 50px 0 50px;
   color: #454e51;
   text-align: justify;
 }
 
-.footer h2{
+.footer h2 {
   text-align: center;
 }
 
-.footer__links li{
+.footer__links li {
   list-style: none;
   text-align: center;
+  margin-left: -2.2em;
 }
 
-.footer__links a{
+.footer__links a {
   text-decoration: none;
-  color:#454e51;
+  color: #454e51;
   font-weight: 600;
   display: block;
 }
@@ -371,40 +372,40 @@ img {
 
 /*------------media---------------*/
 
-@media(min-width: 1024px){
-  .header{
+@media(min-width: 1024px) {
+  .header {
     position: fixed;
 
   }
 
-  .logo-text{
+  .logo-text {
     width: 25%;
     box-sizing: border-box;
   }
 
-  .header__btnMenu{
+  .header__btnMenu {
     display: none;
   }
 
-  .header__nav{
+  .header__nav {
     float: left;
     width: 75%;
     clear: none;
     width: 750px;
   }
 
-  .header__nav ul{
+  .header__nav ul {
     display: flex;
     justify-content: space-around;
   }
 
-  .header__nav li{
+  .header__nav li {
     border-bottom: none;
     background-color: white;
     flex-grow: 1;
   }
 
-  .header__nav a{
+  .header__nav a {
     background-color: white;
     color: rgba(0, 0, 0, .6);
     font-size: 14px;
@@ -413,11 +414,14 @@ img {
     margin-top: .6em
   }
 
-  .header__nav a:hover{
-    background-color: white;
+  .header__nav a:hover {
+    background-color: rgba(0, 0, 0, .1);
+    margin: 0;
+    padding: 1.42em 1em;
+    /*    color: whitesmoke*/
   }
 
-  .people-cards{
+  .people-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 14px;
@@ -425,5 +429,10 @@ img {
 
   .container {
     max-width: 980px;
+  }
+
+  .footer__links li {
+    text-align: left;
+    margin-left: 0;
   }
 }
