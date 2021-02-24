@@ -72,7 +72,6 @@ img{
 
 }
 
-
 .hero{
   height: 60vh;
   padding: 40px 20px;
@@ -82,16 +81,15 @@ img{
   justify-content:  center;
   align-items: center;
 
-  background-image: linear-gradient(-45deg, rgba(255,255,255,.7) 50%, transparent 50%), linear-gradient(45deg, rgba(255,255,255,.7) 50%, transparent 50%), url(../img/01.jpg);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 1) 50%, transparent 50%),
+    linear-gradient(45deg, rgba(255, 255, 255, 1) 50%, transparent 50%), url(../img/01.jpg);
   background-size: 40px 40px,40px 40px, cover;
   background-repeat: no-repeat;
   background-position: left calc(50% - 20px) bottom, left calc(50% + 20px) bottom, center;
 }
 
 .hero__title{
-  background-color: #63c6ae;
-  color: white;
-  padding: 1.3em 1em;
+  background-color: #63c6ae;ing: 1.3em 1em;
   text-decoration: none;
 }
 
@@ -105,7 +103,7 @@ img{
 .hero__btn{
   text-decoration: none;
   cursor: pointer;
-  border: 1.8px solid rgba(255,255,255,.4);
+  border: 1.8px solid ccc;
   margin: 0px;
   padding: 1.5em;
   border-radius: 6px;
@@ -134,10 +132,14 @@ img{
   transition: all .2s ease;
 }
 
-.people-cards__card:hover .people-cards__avatar img,
-.people-cards__card:hover .people-cards__avatar h1{
-  transform: translateY(-88px);
+.people-cards__card:hover .people-cards__avatar img{
+  transform: translateY(-50%);
+}
+
+.people-cards__card:hover .people-cards__title,
+.people-cards__card:hover .people-cards__text{
   color: #63c6ae;
+  transition: all .2s ease;
 }
 
 .people-cards__image{
@@ -162,10 +164,65 @@ img{
 .people-cards__title{
   color: #737c85;
   font-size: 25px;
+  font-weight: normal;
 }
 
 .people-cards__text{
   color: #929da5;
   font-size: 14px;
   text-align: justify;
+}
+
+.content{
+  background-color: #f8f9f9;
+  padding: 1em;
+}
+
+.content h3{
+  font-size: 26px;
+  font-weight: 600;
+  color: rgba(0, 0, 0,.55);
+  text-align: justify;
+}
+
+.content article:nth-child(2){
+  margin-top: 4em;
+}
+
+.content p{
+  color: rgba(0, 0, 0,.55);
+  line-height: 1.5em;
+  text-align: justify;
+  margin-bottom: 3em;
+}
+
+.btn-generico{
+  margin-top: 2em;
+  text-decoration: none;
+  padding: 1.2em 2.8em;
+  border: 1px solid;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-primary{
+  background: #63c6ae;
+  transition: all ease .3s;
+}
+
+.btn-primary:hover{
+  background: #85c6ae;
+  transition: all ease .3s;
+}
+
+.btn-secondary{
+  background: rgba(0,0,0, .7);
+  margin-left: 1em;
+  transition: all ease .3s;
+}
+
+.btn-secondary:hover{
+  background: rgba(0,0,0, .6);
+  transition: all ease .3s;
 }
