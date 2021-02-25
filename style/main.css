@@ -130,8 +130,8 @@ img {
 .hero__text {
     background-color: #242a2c;
     color: whitesmoke;
-    padding: 1.3em 1em;
-    margin: 15px 50px 35px;
+    padding: 1.3em 4em;
+    margin: -5px 50px 35px;
 }
 
 .hero__btn {
@@ -344,7 +344,7 @@ img {
 .footer {
     background-color: #242a2c;
     padding: 50px 0 50px;
-    color: #454e51;
+    color: #565f62;
     text-align: justify;
 }
 
@@ -360,13 +360,27 @@ img {
 
 .footer__links a {
     text-decoration: none;
-    color: #454e51;
+    /* color: #454e51; */
+    color: #565f62;
     font-weight: 600;
     display: block;
 }
 
 
 /*------------media---------------*/
+
+@media(min-width: 600px) {
+    .logo-text {
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .people-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 14px;
+        transition: all .5s ease;
+    }
+}
 
 @media(min-width: 1024px) {
     .header {
@@ -412,6 +426,7 @@ img {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 14px;
+        transition: all .5s ease;
     }
     .container {
         max-width: 980px;
@@ -423,6 +438,9 @@ img {
     }
     .content .container article:nth-child(2) {
         margin-top: 0;
+    }
+    .content-last__img {
+        grid-template-columns: repeat(6, 1fr);
     }
     .footer__links li {
         text-align: left;
