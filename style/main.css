@@ -442,8 +442,22 @@ img {
     .content-last__img {
         grid-template-columns: repeat(6, 1fr);
     }
+    
+    .footer .container{
+        display: flex;
+    }
+    
+    .footer .container > *{
+        margin-right: 2em;
+    }
+    .footer .container h2{
+        text-transform: uppercase;
+        overflow-wrap: anywhere;
+        padding:  0 1em;
+    }
+    
     .footer__links li {
-        text-align: left;
+        text-align: right;
         margin-left: 0;
     }
 }
