@@ -5,9 +5,9 @@
     <title> Infusion </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Bruno">
+    <meta name="author" content="Bruno Luiz Panho Marciano">
     <meta name="description" content="descrição bacanuda">
-    <meta name="keywords" content="html5, tecnologia">
+    <meta name="keywords" content="html5, css, tecnologia">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- Fonts -->
@@ -24,9 +24,9 @@
     <header class="header">
         <a href="index.html" class="logo-text">Infusion</a>
 
-        <button class="header__btnMenu" style="display: none">Menu</button>
+        <button id="menu" class="header__btnMenu" style="display: block" onclick="CliqueMenu()">Menu</button>
 
-        <nav class="header__nav">
+        <nav id="item-menu" class="header__nav">
             <ul>
                 <li><a href="#">design</a></li>
                 <li><a href="#">services</a></li>
@@ -192,6 +192,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

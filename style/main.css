@@ -98,7 +98,18 @@ img {
     transition: .3s all ease-in-out;
 }
 
-.header__btnMenu {}
+.header__btnMenu {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #59b9a1;
+    color: whitesmoke;
+    padding: 1.55em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: auto;
+    border-radius: 5px;
+    float: right;
+}
 
 .hero {
     height: 60vh;
@@ -341,6 +352,8 @@ img {
     margin-top: 5em;
 }
 
+.js {}
+
 .footer {
     background-color: #242a2c;
     padding: 50px 0 50px;
@@ -391,7 +404,7 @@ img {
         box-sizing: border-box;
     }
     .header__btnMenu {
-        display: none;
+        display: block !important;
     }
     .header__nav {
         float: left;
@@ -442,20 +455,17 @@ img {
     .content-last__img {
         grid-template-columns: repeat(6, 1fr);
     }
-    
-    .footer .container{
+    .footer .container {
         display: flex;
     }
-    
-    .footer .container > *{
+    .footer .container>* {
         margin-right: 2em;
     }
-    .footer .container h2{
+    .footer .container h2 {
         text-transform: uppercase;
         overflow-wrap: anywhere;
-        padding:  0 1em;
+        padding: 0 1em;
     }
-    
     .footer__links li {
         text-align: right;
         margin-left: 0;
